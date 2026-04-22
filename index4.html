@@ -1,0 +1,2920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Odisha – Your Gateway to Career Opportunities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-dark: #1340a8;
+            --primary-darker: #0c2d75;
+            --primary-light: #3b82f6;
+            --primary-lighter: #60a5fa;
+            --primary-50: #eff6ff;
+            --primary-100: #dbeafe;
+            --primary-200: #bfdbfe;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --white: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.12);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --gradient-primary: linear-gradient(135deg, #1a56db 0%, #3b82f6 50%, #60a5fa 100%);
+            --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --gradient-hero: linear-gradient(135deg, #0c2d75 0%, #1a56db 40%, #2563eb 70%, #1e40af 100%);
+            --shadow-soft: 0 4px 30px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.12);
+            --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --shadow-blue: 0 8px 30px rgba(26, 86, 219, 0.25);
+            --shadow-blue-lg: 0 20px 60px rgba(26, 86, 219, 0.3);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-2xl: 32px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-700);
+            background: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes float-delayed {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1.4);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        @keyframes rotate-slow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes count-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-img{
+            height: 100%;
+            max-height: 60px;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-on-scroll.delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .animate-on-scroll.delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .animate-on-scroll.delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .animate-on-scroll.delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        .animate-on-scroll.delay-5 {
+            transition-delay: 0.5s;
+        }
+
+        .animate-on-scroll.delay-6 {
+            transition-delay: 0.6s;
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar-custom {
+            padding: 16px 0;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            background: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .navbar-custom.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            padding: 10px 0;
+        }
+
+        .navbar-custom .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--white) !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar-custom.scrolled .navbar-brand {
+            color: var(--primary) !important;
+        }
+
+        .navbar-custom .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(26, 86, 219, 0.3);
+        }
+
+        .navbar-custom.scrolled .brand-icon {
+            box-shadow: var(--shadow-blue);
+        }
+
+        .navbar-custom .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 18px !important;
+            border-radius: var(--radius-sm);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .navbar-custom.scrolled .nav-link {
+            color: var(--gray-600) !important;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--white) !important;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .navbar-custom.scrolled .nav-link:hover {
+            color: var(--primary) !important;
+            background: var(--primary-50);
+        }
+
+        .navbar-custom .btn-nav {
+            background: var(--white);
+            color: var(--primary) !important;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 24px !important;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .navbar-custom.scrolled .btn-nav {
+            background: var(--gradient-primary);
+            color: var(--white) !important;
+            box-shadow: var(--shadow-blue);
+        }
+
+        .navbar-custom .btn-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 8px;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: none;
+            position: relative;
+            width: 24px;
+            height: 18px;
+        }
+
+        .navbar-custom.scrolled .hamburger-line {
+            background: var(--dark);
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        .hamburger-line:nth-child(1) {
+            top: 0;
+        }
+
+        .hamburger-line:nth-child(2) {
+            top: 8px;
+        }
+
+        .hamburger-line:nth-child(3) {
+            top: 16px;
+        }
+
+        /* ========== HERO ========== */
+        .hero-section {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-top: 100px;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-delayed 10s ease-in-out infinite;
+        }
+
+        .hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+            width: 4px;
+            height: 4px;
+        }
+
+        .particle:nth-child(2) {
+            top: 60%;
+            left: 20%;
+            animation-delay: 1s;
+            width: 8px;
+            height: 8px;
+        }
+
+        .particle:nth-child(3) {
+            top: 30%;
+            left: 70%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(4) {
+            top: 80%;
+            left: 80%;
+            animation-delay: 3s;
+            width: 5px;
+            height: 5px;
+        }
+
+        .particle:nth-child(5) {
+            top: 10%;
+            left: 50%;
+            animation-delay: 1.5s;
+            width: 7px;
+            height: 7px;
+        }
+
+        .particle:nth-child(6) {
+            top: 50%;
+            left: 90%;
+            animation-delay: 2.5s;
+            width: 4px;
+            height: 4px;
+        }
+
+        .particle:nth-child(7) {
+            top: 70%;
+            left: 40%;
+            animation-delay: 0.5s;
+        }
+
+        .particle:nth-child(8) {
+            top: 40%;
+            left: 30%;
+            animation-delay: 3.5s;
+            width: 5px;
+            height: 5px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .hero-badge .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: #34d399;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .hero-badge .badge-dot::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border: 2px solid #34d399;
+            border-radius: 50%;
+            animation: pulse-ring 2s infinite;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .hero-title .text-highlight {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b, #fcd34d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 40px;
+            max-width: 540px;
+            font-weight: 400;
+            animation: fadeInUp 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .btn-primary-custom {
+            background: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 16px 36px;
+            border-radius: 50px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            text-decoration: none;
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            color: var(--primary-dark);
+        }
+
+        .btn-outline-custom {
+            background: transparent;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 16px 36px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            text-decoration: none;
+        }
+
+        .btn-outline-custom:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 4px;
+        }
+
+        /* Hero Card */
+        .hero-card-wrapper {
+            position: relative;
+            animation: fadeInRight 1s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-lighter), #fbbf24, var(--primary-lighter));
+        }
+
+        .hero-card-inner {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .job-tag {
+            display: inline-block;
+            background: rgba(52, 211, 153, 0.15);
+            color: #34d399;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .job-tag.blue {
+            background: rgba(96, 165, 250, 0.15);
+            color: #60a5fa;
+        }
+
+        .job-tag.amber {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+        }
+
+        .hero-job-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--white);
+            margin: 12px 0 8px;
+        }
+
+        .hero-job-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-job-meta i {
+            margin-right: 4px;
+        }
+
+        .hero-job-salary {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fbbf24;
+            margin-top: 12px;
+        }
+
+        .hero-floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-md);
+            padding: 14px 20px;
+            animation: float 5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-floating-card.card-1 {
+            top: -15px;
+            right: -20px;
+            animation-delay: 0s;
+        }
+
+        .hero-floating-card.card-2 {
+            bottom: 60px;
+            left: -30px;
+            animation-delay: 1.5s;
+        }
+
+        .floating-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .floating-icon.green {
+            background: rgba(52, 211, 153, 0.2);
+            color: #34d399;
+        }
+
+        .floating-icon.blue {
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+        }
+
+        .floating-text {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+
+        .floating-text strong {
+            display: block;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        /* ========== SECTION STYLES ========== */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-50);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+            border: 1px solid var(--primary-100);
+        }
+
+        .section-badge i {
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-500);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .section-subtitle.centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ========== SECTORS ========== */
+        .sectors-section {
+            background: var(--gray-50);
+            position: relative;
+        }
+
+        .sector-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .sector-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .sector-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-heavy);
+            border-color: transparent;
+        }
+
+        .sector-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .sector-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+            transition: all 0.4s;
+        }
+
+        .sector-icon.blue {
+            background: var(--primary-50);
+            color: var(--primary);
+        }
+
+        .sector-icon.green {
+            background: #ecfdf5;
+            color: #059669;
+        }
+
+        .sector-icon.amber {
+            background: #fffbeb;
+            color: #d97706;
+        }
+
+        .sector-icon.purple {
+            background: #f5f3ff;
+            color: #7c3aed;
+        }
+
+        .sector-icon.rose {
+            background: #fff1f2;
+            color: #e11d48;
+        }
+
+        .sector-icon.cyan {
+            background: #ecfeff;
+            color: #0891b2;
+        }
+
+        .sector-icon.indigo {
+            background: #eef2ff;
+            color: #4f46e5;
+        }
+
+        .sector-icon.teal {
+            background: #f0fdfa;
+            color: #0d9488;
+        }
+
+        .sector-card:hover .sector-icon {
+            transform: scale(1.1);
+        }
+
+        .sector-card h5 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .sector-card p {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        .sector-count {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ========== WHY CHOOSE US ========== */
+        .why-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(26, 86, 219, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .why-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 36px 28px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            height: 100%;
+            position: relative;
+        }
+
+        .why-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--primary-200);
+        }
+
+        .why-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-50);
+            line-height: 1;
+            margin-bottom: 16px;
+            transition: color 0.4s;
+        }
+
+        .why-card:hover .why-number {
+            color: var(--primary-100);
+        }
+
+        .why-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-md);
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-blue);
+        }
+
+        .why-card h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* ========== HOW IT WORKS ========== */
+        .how-section {
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .how-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .how-section .section-badge {
+            background: rgba(26, 86, 219, 0.2);
+            color: var(--primary-lighter);
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+
+        .how-section .section-title {
+            color: var(--white);
+        }
+
+        .how-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .how-card {
+            text-align: center;
+            position: relative;
+            padding: 40px 24px;
+        }
+
+        .how-step-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            background: linear-gradient(180deg, rgba(59, 130, 246, 0.15) 0%, transparent 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .how-icon-wrapper {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.1);
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.5rem;
+            color: var(--primary-lighter);
+            transition: all 0.4s;
+        }
+
+        .how-card:hover .how-icon-wrapper {
+            background: var(--gradient-primary);
+            border-color: transparent;
+            color: white;
+            box-shadow: var(--shadow-blue-lg);
+            transform: scale(1.1);
+        }
+
+        .how-card h5 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .how-card p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .how-connector {
+            position: absolute;
+            top: 50%;
+            right: -10%;
+            width: 20%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        @media (max-width: 991px) {
+            .how-connector {
+                display: none;
+            }
+        }
+
+        /* ========== STATS ========== */
+        .stats-section {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 500;
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (max-width: 767px) {
+            .stat-divider {
+                display: none;
+            }
+        }
+
+        /* ========== FEATURED JOBS ========== */
+        .jobs-section {
+            background: var(--gray-50);
+        }
+
+        .job-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+            border-color: transparent;
+        }
+
+        .job-card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .job-company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .job-bookmark {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+            cursor: pointer;
+            transition: all 0.3s;
+            background: transparent;
+        }
+
+        .job-bookmark:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-50);
+        }
+
+        .job-card h5 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .job-company-name {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .job-detail-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--gray-50);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .job-detail-tag i {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+        }
+
+        .job-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid var(--gray-100);
+        }
+
+        .job-salary {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        .job-salary span {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: var(--gray-400);
+        }
+
+        .btn-apply {
+            background: var(--primary-50);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-apply:hover {
+            background: var(--primary);
+            color: white;
+            box-shadow: var(--shadow-blue);
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonial-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.4s;
+            height: 100%;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: var(--shadow-medium);
+            border-color: transparent;
+        }
+
+        .testimonial-quote-icon {
+            font-size: 3rem;
+            color: var(--primary-100);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 28px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-100);
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-role {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+        }
+
+        .testimonial-stars {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 2px;
+        }
+
+        /* ========== CTA SECTION ========== */
+        .cta-section {
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-2xl);
+            padding: 60px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-card h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .cta-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* ========== CONTACT ========== */
+        .contact-section {
+            background: var(--gray-50);
+        }
+
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            box-shadow: var(--shadow-soft);
+            border-color: var(--primary-200);
+            transform: translateY(-4px);
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            background: var(--primary-50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .contact-card h6 {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .contact-card p {
+            font-size: 0.95rem;
+            color: var(--dark);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .contact-form {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .contact-form .form-control,
+        .contact-form .form-select {
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            color: var(--gray-700);
+            transition: all 0.3s;
+            background: var(--gray-50);
+        }
+
+        .contact-form .form-control:focus,
+        .contact-form .form-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+            background: var(--white);
+        }
+
+        .contact-form .form-label {
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            margin-bottom: 6px;
+        }
+
+        .btn-submit {
+            background: var(--gradient-primary);
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 16px 40px;
+            border-radius: 50px;
+            border: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: var(--shadow-blue);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-blue-lg);
+            color: white;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer-section {
+            background: var(--dark);
+            padding: 80px 0 0;
+        }
+
+        .footer-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .footer-desc {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            max-width: 320px;
+            margin-bottom: 24px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-lighter);
+            transform: translateX(4px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 24px 0;
+            margin-top: 60px;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .footer-bottom a {
+            color: var(--primary-lighter);
+            text-decoration: none;
+        }
+
+        /* ========== BACK TO TOP ========== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-blue);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-blue-lg);
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25d366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        /* ========== TOAST ========== */
+        .custom-toast {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 16px 24px;
+            box-shadow: var(--shadow-heavy);
+            border-left: 4px solid #059669;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateX(120%);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .custom-toast.show {
+            transform: translateX(0);
+        }
+
+        .custom-toast .toast-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #ecfdf5;
+            color: #059669;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .custom-toast .toast-text {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 991px) {
+            .hero-card-wrapper {
+                margin-top: 60px;
+            }
+
+            .hero-floating-card.card-1 {
+                right: 10px;
+                top: -10px;
+            }
+
+            .hero-floating-card.card-2 {
+                left: 10px;
+                bottom: 40px;
+            }
+
+            .navbar-collapse {
+                background: var(--white);
+                border-radius: var(--radius-lg);
+                padding: 20px;
+                margin-top: 16px;
+                box-shadow: var(--shadow-heavy);
+            }
+
+            .navbar-custom .nav-link {
+                color: var(--gray-600) !important;
+                padding: 12px 16px !important;
+            }
+
+            .navbar-custom .nav-link:hover {
+                color: var(--primary) !important;
+                background: var(--primary-50);
+            }
+
+            .navbar-custom .btn-nav {
+                background: var(--gradient-primary) !important;
+                color: var(--white) !important;
+                margin-top: 10px;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .section-padding {
+                padding: 70px 0;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .hero-stat-number {
+                font-size: 1.6rem;
+            }
+
+            .cta-card {
+                padding: 40px 24px;
+            }
+
+            .contact-form {
+                padding: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-custom" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpeg" alt="Work Odisha Logo" class="logo-img me-2">
+                Work Odisha
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sectors">Sectors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link btn-nav" href="#contact">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-section" id="home">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Odisha's Leading Job Consultancy
+                    </div>
+                    <h1 class="hero-title">
+                        Your Gateway to<br>
+                        <span class="text-highlight">Dream Career</span><br>
+                        in Odisha
+                    </h1>
+                    <p class="hero-subtitle">
+                        Connecting talented professionals with top employers across all sectors. From government to
+                        private, IT to healthcare — we've got your career covered.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#jobs" class="btn-primary-custom">
+                            <i class="bi bi-search"></i> Find Jobs
+                        </a>
+                        <a href="#contact" class="btn-outline-custom">
+                            <i class="bi bi-person-plus"></i> Register Now
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-number" data-count="15000">0+</div>
+                            <div class="hero-stat-label">Placed Candidates</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-number" data-count="500">0+</div>
+                            <div class="hero-stat-label">Partner Companies</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-number" data-count="20">0+</div>
+                            <div class="hero-stat-label">Sectors Covered</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-card-wrapper">
+                        <div class="hero-floating-card card-1">
+                            <div class="floating-icon green">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="floating-text">
+                                <strong>2,340+</strong>
+                                Active Jobs
+                            </div>
+                        </div>
+                        <div class="hero-floating-card card-2">
+                            <div class="floating-icon blue">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div class="floating-text">
+                                <strong>98%</strong>
+                                Success Rate
+                            </div>
+                        </div>
+                        <div class="hero-card">
+                            <div class="hero-card-inner">
+                                <span class="job-tag">New</span>
+                                <h4 class="hero-job-title">Senior Software Developer</h4>
+                                <div class="hero-job-meta">
+                                    <span><i class="bi bi-building"></i> TCS, Bhubaneswar</span>
+                                    <span><i class="bi bi-geo-alt"></i> Odisha</span>
+                                </div>
+                                <div class="hero-job-salary">₹8L - ₹14L / Year</div>
+                            </div>
+                            <div class="hero-card-inner">
+                                <span class="job-tag blue">Hot</span>
+                                <h4 class="hero-job-title">Marketing Manager</h4>
+                                <div class="hero-job-meta">
+                                    <span><i class="bi bi-building"></i> Reliance Retail</span>
+                                    <span><i class="bi bi-geo-alt"></i> Cuttack</span>
+                                </div>
+                                <div class="hero-job-salary">₹6L - ₹10L / Year</div>
+                            </div>
+                            <div class="hero-card-inner">
+                                <span class="job-tag amber">Govt</span>
+                                <h4 class="hero-job-title">Junior Engineer – Civil</h4>
+                                <div class="hero-job-meta">
+                                    <span><i class="bi bi-building"></i> Govt. of Odisha</span>
+                                    <span><i class="bi bi-geo-alt"></i> Various</span>
+                                </div>
+                                <div class="hero-job-salary">₹35K - ₹56K / Month</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTORS ========== -->
+    <section class="sectors-section section-padding" id="sectors">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge animate-on-scroll">
+                    <i class="bi bi-grid-3x3-gap-fill"></i> Job Sectors
+                </div>
+                <h2 class="section-title animate-on-scroll delay-1">Explore Opportunities<br>Across All Sectors</h2>
+                <p class="section-subtitle centered animate-on-scroll delay-2">
+                    We provide placement services in every major industry, ensuring you find the perfect match for your
+                    skills and aspirations.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-1">
+                        <div class="sector-icon blue"><i class="bi bi-laptop"></i></div>
+                        <h5>IT & Software</h5>
+                        <p>Development, Testing & More</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 450+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-2">
+                        <div class="sector-icon green"><i class="bi bi-hospital"></i></div>
+                        <h5>Healthcare</h5>
+                        <p>Doctors, Nurses & Staff</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 320+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-3">
+                        <div class="sector-icon amber"><i class="bi bi-mortarboard-fill"></i></div>
+                        <h5>Education</h5>
+                        <p>Teaching & Academic Roles</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 280+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-4">
+                        <div class="sector-icon purple"><i class="bi bi-building"></i></div>
+                        <h5>Government</h5>
+                        <p>Central & State Govt Jobs</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 600+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-1">
+                        <div class="sector-icon rose"><i class="bi bi-shop"></i></div>
+                        <h5>BFSI</h5>
+                        <p>Banking, Finance & Insurance</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 350+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-2">
+                        <div class="sector-icon cyan"><i class="bi bi-gear-wide-connected"></i></div>
+                        <h5>Manufacturing</h5>
+                        <p>Production & Engineering</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 200+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-3">
+                        <div class="sector-icon indigo"><i class="bi bi-truck"></i></div>
+                        <h5>Logistics</h5>
+                        <p>Supply Chain & Transport</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 180+ Jobs</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sector-card animate-on-scroll delay-4">
+                        <div class="sector-icon teal"><i class="bi bi-megaphone-fill"></i></div>
+                        <h5>Marketing & Sales</h5>
+                        <p>Digital & Field Marketing</p>
+                        <span class="sector-count"><i class="bi bi-briefcase"></i> 290+ Jobs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-section section-padding" id="why-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="section-badge animate-on-scroll">
+                        <i class="bi bi-shield-check"></i> Why Choose Us
+                    </div>
+                    <h2 class="section-title animate-on-scroll delay-1">Trusted by Thousands of Job Seekers</h2>
+                    <p class="section-subtitle animate-on-scroll delay-2">
+                        With years of experience and deep industry connections, we don't just find you a job — we build
+                        your career path.
+                    </p>
+                    <div class="mt-4 animate-on-scroll delay-3">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background: #ecfdf5; display: flex; align-items: center; justify-content: center; color: #059669;">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <span style="font-weight: 500; color: var(--gray-700);">Free Registration for
+                                Candidates</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background: #ecfdf5; display: flex; align-items: center; justify-content: center; color: #059669;">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <span style="font-weight: 500; color: var(--gray-700);">Direct Company Interviews</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background: #ecfdf5; display: flex; align-items: center; justify-content: center; color: #059669;">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <span style="font-weight: 500; color: var(--gray-700);">Resume Building Assistance</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background: #ecfdf5; display: flex; align-items: center; justify-content: center; color: #059669;">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <span style="font-weight: 500; color: var(--gray-700);">Pan-Odisha Coverage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="why-card animate-on-scroll delay-1">
+                                <div class="why-number">01</div>
+                                <div class="why-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                                <h5>Fast Placement</h5>
+                                <p>Average placement time of just 15 days. Our streamlined process ensures you get hired
+                                    quickly.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card animate-on-scroll delay-2">
+                                <div class="why-number">02</div>
+                                <div class="why-icon"><i class="bi bi-hand-thumbs-up-fill"></i></div>
+                                <h5>Verified Employers</h5>
+                                <p>Every company in our network is thoroughly verified for authenticity and work culture
+                                    standards.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card animate-on-scroll delay-3">
+                                <div class="why-number">03</div>
+                                <div class="why-icon"><i class="bi bi-chat-dots-fill"></i></div>
+                                <h5>Personal Guidance</h5>
+                                <p>Dedicated career counselors who guide you at every step from resume to final
+                                    interview.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card animate-on-scroll delay-4">
+                                <div class="why-number">04</div>
+                                <div class="why-icon"><i class="bi bi-piggy-bank-fill"></i></div>
+                                <h5>No Hidden Charges</h5>
+                                <p>Transparent pricing with no hidden fees. What you see is what you pay — nothing more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="how-section section-padding" id="how-it-works">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="text-center mb-5">
+                <div class="section-badge animate-on-scroll">
+                    <i class="bi bi-arrow-repeat"></i> How It Works
+                </div>
+                <h2 class="section-title animate-on-scroll delay-1">Get Hired in 4 Simple Steps</h2>
+                <p class="section-subtitle centered animate-on-scroll delay-2">
+                    Our streamlined process makes job hunting effortless and efficient.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="how-card animate-on-scroll delay-1">
+                        <div class="how-connector"></div>
+                        <div class="how-step-number">01</div>
+                        <div class="how-icon-wrapper"><i class="bi bi-person-plus-fill"></i></div>
+                        <h5>Register Free</h5>
+                        <p>Fill out a simple registration form with your basic details and career preferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="how-card animate-on-scroll delay-2">
+                        <div class="how-connector"></div>
+                        <div class="how-step-number">02</div>
+                        <div class="how-icon-wrapper"><i class="bi bi-file-earmark-text-fill"></i></div>
+                        <h5>Upload Resume</h5>
+                        <p>Share your resume and our experts will optimize it to match industry standards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="how-card animate-on-scroll delay-3">
+                        <div class="how-connector"></div>
+                        <div class="how-step-number">03</div>
+                        <div class="how-icon-wrapper"><i class="bi bi-matching-fill"></i></div>
+                        <h5>Get Matched</h5>
+                        <p>We match your profile with the best available jobs from our vast employer network.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="how-card animate-on-scroll delay-4">
+                        <div class="how-step-number">04</div>
+                        <div class="how-icon-wrapper"><i class="bi bi-trophy-fill"></i></div>
+                        <h5>Get Hired</h5>
+                        <p>Attend interviews directly with employers and land your dream job in Odisha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats-section">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-number" data-count="15000">0</div>
+                        <div class="stat-label">Candidates Placed</div>
+                        <div class="stat-divider d-none d-lg-block"></div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-item animate-on-scroll delay-1">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Partner Companies</div>
+                        <div class="stat-divider d-none d-lg-block"></div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-item animate-on-scroll delay-2">
+                        <div class="stat-number" data-count="2340">0</div>
+                        <div class="stat-label">Active Job Listings</div>
+                        <div class="stat-divider d-none d-lg-block"></div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-item animate-on-scroll delay-3">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">Success Rate (%)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED JOBS ========== -->
+    <section class="jobs-section section-padding" id="jobs">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge animate-on-scroll">
+                    <i class="bi bi-fire"></i> Featured Jobs
+                </div>
+                <h2 class="section-title animate-on-scroll delay-1">Latest Job Openings</h2>
+                <p class="section-subtitle centered animate-on-scroll delay-2">
+                    Handpicked opportunities from top employers across Odisha. Apply before they're gone.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-1">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #1a56db, #3b82f6);">TCS</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>Senior Software Developer</h5>
+                        <div class="job-company-name">Tata Consultancy Services</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Bhubaneswar</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Senior</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹8L - ₹14L <span>/year</span></div>
+                            <button class="btn-apply" onclick="applyJob('Senior Software Developer')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-2">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #059669, #34d399);">INFY</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>System Engineer</h5>
+                        <div class="job-company-name">Infosys Limited</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Bhubaneswar</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Mid Level</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹5L - ₹9L <span>/year</span></div>
+                            <button class="btn-apply" onclick="applyJob('System Engineer')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-3">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #d97706, #fbbf24);">GOV</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>Junior Engineer – Civil</h5>
+                        <div class="job-company-name">Govt. of Odisha (PWD)</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Various</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Entry</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹35K - ₹56K <span>/month</span></div>
+                            <button class="btn-apply" onclick="applyJob('Junior Engineer – Civil')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-1">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #e11d48, #fb7185);">HCL</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>Network Administrator</h5>
+                        <div class="job-company-name">HCL Technologies</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Cuttack</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Mid Level</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹4L - ₹7L <span>/year</span></div>
+                            <button class="btn-apply" onclick="applyJob('Network Administrator')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-2">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #7c3aed, #a78bfa);">APL</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>Marketing Manager</h5>
+                        <div class="job-company-name">Apollo Hospitals</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Bhubaneswar</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Senior</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹6L - ₹10L <span>/year</span></div>
+                            <button class="btn-apply" onclick="applyJob('Marketing Manager')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card animate-on-scroll delay-3">
+                        <div class="job-card-header">
+                            <div class="job-company-logo"
+                                style="background: linear-gradient(135deg, #0891b2, #22d3ee);">RL</div>
+                            <button class="job-bookmark" onclick="bookmarkJob(this)"><i
+                                    class="bi bi-bookmark"></i></button>
+                        </div>
+                        <h5>HR Executive</h5>
+                        <div class="job-company-name">Reliance Retail</div>
+                        <div class="job-details">
+                            <span class="job-detail-tag"><i class="bi bi-geo-alt"></i> Sambalpur</span>
+                            <span class="job-detail-tag"><i class="bi bi-clock"></i> Full Time</span>
+                            <span class="job-detail-tag"><i class="bi bi-star"></i> Mid Level</span>
+                        </div>
+                        <div class="job-card-footer">
+                            <div class="job-salary">₹3.5L - ₹5L <span>/year</span></div>
+                            <button class="btn-apply" onclick="applyJob('HR Executive')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 animate-on-scroll">
+                <a href="#contact" class="btn-primary-custom"
+                    style="background: var(--gradient-primary); color: white;">
+                    View All Jobs <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonial-section section-padding" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge animate-on-scroll">
+                    <i class="bi bi-chat-quote-fill"></i> Testimonials
+                </div>
+                <h2 class="section-title animate-on-scroll delay-1">What Our Candidates Say</h2>
+                <p class="section-subtitle centered animate-on-scroll delay-2">
+                    Real stories from real people who found their dream jobs through Work Odisha.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card animate-on-scroll delay-1">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="testimonial-quote-icon">"</div>
+                        <p class="testimonial-text">I was struggling to find a good IT job in Bhubaneswar. Work Odisha
+                            connected me with TCS within just 12 days. Their resume building support was exceptional!
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/odisha-dev1/96/96.jpg" alt="Rajesh Kumar"
+                                class="testimonial-avatar">
+                            <div>
+                                <div class="testimonial-name">Rajesh Kumar</div>
+                                <div class="testimonial-role">Software Developer, TCS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card animate-on-scroll delay-2">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="testimonial-quote-icon">"</div>
+                        <p class="testimonial-text">As a fresher, I had no idea how to approach companies. Work Odisha's
+                            team guided me through every step and I got placed at Infosys. Highly recommended!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/odisha-fresh1/96/96.jpg" alt="Priyanka Dash"
+                                class="testimonial-avatar">
+                            <div>
+                                <div class="testimonial-name">Priyanka Dash</div>
+                                <div class="testimonial-role">System Engineer, Infosys</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card animate-on-scroll delay-3">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <div class="testimonial-quote-icon">"</div>
+                        <p class="testimonial-text">The best consultancy in Odisha for government job preparation. They
+                            provided proper guidance and study materials. I cracked Odisha PSC with their help!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/odisha-govt1/96/96.jpg" alt="Amit Mohapatra"
+                                class="testimonial-avatar">
+                            <div>
+                                <div class="testimonial-name">Amit Mohapatra</div>
+                                <div class="testimonial-role">OAS Officer, Govt. of Odisha</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="cta-card animate-on-scroll">
+                <h2>Ready to Start Your Career?</h2>
+                <p>Join 15,000+ professionals who found their dream jobs through Work Odisha. Registration is completely
+                    free!</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn-primary-custom">
+                        <i class="bi bi-person-plus"></i> Register Now – It's Free
+                    </a>
+                    <a href="https://wa.me/919876543210" class="btn-outline-custom" target="_blank">
+                        <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge animate-on-scroll">
+                    <i class="bi bi-envelope-fill"></i> Contact Us
+                </div>
+                <h2 class="section-title animate-on-scroll delay-1">Get in Touch With Us</h2>
+                <p class="section-subtitle centered animate-on-scroll delay-2">
+                    Have questions? Want to register? Reach out to us and our team will get back to you within 24 hours.
+                </p>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card animate-on-scroll delay-1">
+                        <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <h6>Our Office</h6>
+                            <p>Saheed Nagar, Bhubaneswar, Odisha 751007</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card animate-on-scroll delay-2">
+                        <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <h6>Phone Number</h6>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card animate-on-scroll delay-3">
+                        <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <h6>Email Address</h6>
+                            <p>info@workodisha.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card animate-on-scroll delay-4">
+                        <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+                        <div>
+                            <h6>Working Hours</h6>
+                            <p>Mon – Sat: 10 AM – 7 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form animate-on-scroll">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 8px;">Free Registration</h4>
+                        <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 28px;">Fill in your details
+                            and we'll match you with the best opportunities.</p>
+                        <form id="registrationForm" onsubmit="handleFormSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" placeholder="Enter your phone number"
+                                        required pattern="[0-9]{10}">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Preferred Sector *</label>
+                                    <select class="form-select" required>
+                                        <option value="" disabled selected>Select a sector</option>
+                                        <option>IT & Software</option>
+                                        <option>Healthcare</option>
+                                        <option>Education</option>
+                                        <option>Government</option>
+                                        <option>BFSI (Banking/Finance)</option>
+                                        <option>Manufacturing</option>
+                                        <option>Logistics</option>
+                                        <option>Marketing & Sales</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Experience</label>
+                                    <select class="form-select">
+                                        <option value="" disabled selected>Select experience</option>
+                                        <option>Fresher (0 years)</option>
+                                        <option>1 - 2 years</option>
+                                        <option>2 - 5 years</option>
+                                        <option>5 - 10 years</option>
+                                        <option>10+ years</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Preferred Location</label>
+                                    <select class="form-select">
+                                        <option value="" disabled selected>Select location</option>
+                                        <option>Bhubaneswar</option>
+                                        <option>Cuttack</option>
+                                        <option>Rourkela</option>
+                                        <option>Sambalpur</option>
+                                        <option>Berhampur</option>
+                                        <option>Balasore</option>
+                                        <option>Puri</option>
+                                        <option>Any Location</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message (Optional)</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Tell us about your skills or requirements..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-submit">
+                                        <i class="bi bi-send-fill"></i> Submit & Get Matched
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <span class="brand-icon"><i class="bi bi-briefcase-fill"></i></span>
+                        Work Odisha
+                    </div>
+                    <p class="footer-desc">
+                        Odisha's most trusted job consultancy. We bridge the gap between talented professionals and top
+                        employers across all sectors.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-title">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Home</a></li>
+                        <li><a href="#sectors"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Job
+                                Sectors</a></li>
+                        <li><a href="#why-us"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Why Us</a>
+                        </li>
+                        <li><a href="#jobs"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Featured
+                                Jobs</a></li>
+                        <li><a href="#contact"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-title">Top Sectors</div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> IT Jobs</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Govt Jobs</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Healthcare</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Banking</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right" style="font-size:0.7rem"></i> Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-title">Top Locations</div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.7rem"></i> Jobs in Bhubaneswar</a>
+                        </li>
+                        <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.7rem"></i> Jobs in Cuttack</a></li>
+                        <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.7rem"></i> Jobs in Rourkela</a></li>
+                        <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.7rem"></i> Jobs in Sambalpur</a>
+                        </li>
+                        <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.7rem"></i> Jobs in Berhampur</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>© 2026 Work Odisha. <a href="http://teksapphire.com"> TekSapphire</a>.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ========== WHATSAPP FLOAT ========== -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ========== TOAST ========== -->
+    <div class="custom-toast" id="customToast">
+        <div class="toast-icon"><i class="bi bi-check-lg"></i></div>
+        <div class="toast-text" id="toastText">Success!</div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ========== NAVBAR SCROLL ==========
+        const navbar = document.getElementById('mainNav');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // ========== SMOOTH SCROLL FOR NAV LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const position = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: position, behavior: 'smooth' });
+                }
+                // Close mobile nav
+                const navCollapse = document.getElementById('navbarNav');
+                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+
+        // ========== SCROLL ANIMATIONS ==========
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // ========== COUNTER ANIMATION ==========
+        let counterAnimated = false;
+
+        function animateCounters() {
+            if (counterAnimated) return;
+
+            const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+            const statsSection = document.querySelector('.stats-section');
+
+            if (!statsSection) return;
+
+            const rect = statsSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                counterAnimated = true;
+
+                statNumbers.forEach(el => {
+                    const target = parseInt(el.getAttribute('data-count'));
+                    const duration = 2000;
+                    const start = performance.now();
+
+                    function update(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.floor(eased * target);
+
+                        if (target >= 1000) {
+                            el.textContent = current.toLocaleString('en-IN') + '+';
+                        } else {
+                            el.textContent = current + (el.closest('.stat-item') && el.closest('.stat-item').querySelector('.stat-label')?.textContent.includes('%') ? '%' : '+');
+                        }
+
+                        if (progress < 1) {
+                            requestAnimationFrame(update);
+                        }
+                    }
+
+                    requestAnimationFrame(update);
+                });
+            }
+        }
+
+        window.addEventListener('scroll', animateCounters);
+        animateCounters(); // Check on load
+
+        // ========== HERO COUNTER ANIMATION ==========
+        let heroCountersAnimated = false;
+
+        function animateHeroCounters() {
+            if (heroCountersAnimated) return;
+
+            const heroStats = document.querySelectorAll('.hero-stat-number[data-count]');
+            if (heroStats.length === 0) return;
+
+            const heroSection = document.querySelector('.hero-section');
+            const rect = heroSection.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                heroCountersAnimated = true;
+
+                heroStats.forEach(el => {
+                    const target = parseInt(el.getAttribute('data-count'));
+                    const duration = 2500;
+                    const start = performance.now();
+
+                    function update(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 4);
+                        const current = Math.floor(eased * target);
+
+                        el.textContent = current.toLocaleString('en-IN') + '+';
+
+                        if (progress < 1) {
+                            requestAnimationFrame(update);
+                        }
+                    }
+
+                    setTimeout(() => requestAnimationFrame(update), 600);
+                });
+            }
+        }
+
+        window.addEventListener('scroll', animateHeroCounters);
+        setTimeout(animateHeroCounters, 100);
+
+        // ========== TOAST NOTIFICATION ==========
+        function showToast(message) {
+            const toast = document.getElementById('customToast');
+            const toastText = document.getElementById('toastText');
+            toastText.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3500);
+        }
+
+        // ========== BOOKMARK JOB ==========
+        function bookmarkJob(btn) {
+            const icon = btn.querySelector('i');
+            if (icon.classList.contains('bi-bookmark')) {
+                icon.classList.remove('bi-bookmark');
+                icon.classList.add('bi-bookmark-fill');
+                btn.style.borderColor = 'var(--primary)';
+                btn.style.color = 'var(--primary)';
+                btn.style.background = 'var(--primary-50)';
+                showToast('Job saved to bookmarks!');
+            } else {
+                icon.classList.remove('bi-bookmark-fill');
+                icon.classList.add('bi-bookmark');
+                btn.style.borderColor = '';
+                btn.style.color = '';
+                btn.style.background = '';
+                showToast('Removed from bookmarks');
+            }
+        }
+
+        // ========== APPLY JOB ==========
+        function applyJob(jobTitle) {
+            showToast(`Application started for "${jobTitle}"!`);
+            setTimeout(() => {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 800);
+        }
+
+        // ========== FORM SUBMIT ==========
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.btn-submit');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = '<i class="bi bi-check-circle-fill"></i> Registration Successful!';
+                btn.style.background = 'linear-gradient(135deg, #059669, #34d399)';
+                showToast('🎉 Registration submitted successfully! We\'ll contact you soon.');
+
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 3000);
+            }, 2000);
+        }
+
+        // ========== CLOSE MOBILE NAV ON LINK CLICK ==========
+        document.querySelectorAll('.navbar-nav .nav-link:not(.btn-nav)').forEach(link => {
+            link.addEventListener('click', () => {
+                const navCollapse = document.getElementById('navbarNav');
+                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
