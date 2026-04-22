@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Odisha | Executive Job Consultancy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Color Palette & Variables */
+        :root {
+            --primary-blue: #0061f2;
+            --dark-blue: #0e1c36;
+            --light-bg: #f8f9fc;
+            --accent-gradient: linear-gradient(135deg, #0061f2 0%, #00cfd5 100%);
+            --section-padding: 100px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* Typography Enhancements */
+        .text-primary-blue {
+            color: var(--primary-blue);
+        }
+
+        .bg-primary-blue {
+            background-color: var(--primary-blue);
+        }
+
+        .ls-1 {
+            letter-spacing: 1.5px;
+        }
+
+        /* Section Spacing */
+        .section-padding {
+            padding-top: var(--section-padding);
+            padding-bottom: var(--section-padding);
+        }
+
+        /* Header & Top Bar */
+        .top-bar {
+            background-color: var(--dark-blue);
+            font-size: 13px;
+        }
+
+        .hero-header {
+            height: 85vh;
+            background: linear-gradient(rgba(14, 28, 54, 0.85), rgba(14, 28, 54, 0.85)),
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+        }
+
+        .text-gradient {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Button Premium Style */
+        .btn-blue-premium {
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-blue-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 97, 242, 0.3);
+            color: white;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: white;
+            padding: 40px 0;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Process Cards */
+        .process-card {
+            background: white;
+            padding: 50px 30px;
+            border-radius: 20px;
+            position: relative;
+            transition: 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .process-card.active {
+            background: var(--dark-blue);
+            color: white;
+        }
+
+        .process-card.active p {
+            color: white !important;
+        }
+
+        .step-num {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-blue);
+            color: white;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(0, 97, 242, 0.4);
+        }
+
+        /* Contact Form */
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-control,
+        .form-select {
+            padding: 14px;
+            background: #fdfdfd;
+            border: 1px solid #e2e8f0;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 4px rgba(0, 97, 242, 0.1);
+        }
+
+        /* Footer Links */
+        .footer-links li a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: 0.3s;
+            line-height: 2.5;
+        }
+
+        .footer-links li a:hover {
+            color: var(--primary-blue);
+            padding-left: 5px;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 768px) {
+            .section-padding {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .display-3 {
+                font-size: 2.5rem;
+            }
+
+            .hero-header {
+                height: auto;
+                padding: 120px 0 80px 0;
+            }
+        }
+
+        /* Industry Section Styles */
+        #industries {
+            background-color: #ffffff;
+        }
+
+        .industry-card {
+            padding: 40px 30px;
+            background: #fdfdfd;
+            border: 1px solid #f0f0f0;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+        }
+
+        .industry-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 97, 242, 0.05);
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .industry-card h5 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+        }
+
+        /* Premium Hover Effect */
+        .industry-card:hover {
+            background: #ffffff;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: transparent;
+        }
+
+        .industry-card:hover .industry-icon {
+            background: var(--primary-blue);
+            color: #ffffff;
+            transform: rotateY(180deg);
+            /* Modern flip effect */
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .industry-card {
+                padding: 30px 20px;
+            }
+        }
+
+        /* Why Choose Us Custom Styles */
+        .feature-check {
+            width: 35px;
+            height: 35px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .why-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 24px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+        }
+
+        .why-icon {
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        /* Highlight the first card to draw attention */
+        .why-card.active-blue {
+            background: var(--dark-blue);
+            color: white;
+        }
+
+        .why-card.active-blue .why-icon {
+            color: var(--accent-blue);
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 97, 242, 0.1);
+            border-color: rgba(0, 97, 242, 0.2);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .why-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar d-none d-lg-block">
+        <div class="container d-flex justify-content-between text-white py-2">
+            <div><i class="fas fa-envelope me-2"></i> contact@workodisha.com</div>
+            <div><i class="fas fa-phone-alt me-2"></i> +91 98765 43210</div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="logo.jpeg" alt="Work Odisha Logo" height="70" class="me-2">
+                <!-- <i class="fas fa-briefcase text-primary-blue me-2"></i> -->
+                Work<span class="text-primary-blue">Odisha</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#process">Process</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-blue-premium rounded-pill px-4" href="#contact">Apply
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-header">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-7 text-white">
+                    <span class="badge bg-primary-light mb-3 px-3 py-2 text-uppercase ls-1">#1 Consultancy in
+                        Odisha</span>
+                    <h1 class="display-3 fw-bold mb-4">Bridging the Gap Between <span
+                            class="text-gradient">Ambition</span> and <span class="text-gradient">Opportunity</span>.
+                    </h1>
+                    <p class="lead opacity-75 mb-5 pe-lg-5">We specialize in talent acquisition across 20+ industries.
+                        Whether you are a fresh graduate or a seasoned professional, we find the right fit for your
+                        skills.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-blue-premium btn-lg px-5 shadow">Get Hired</button>
+                        <button class="btn btn-outline-light btn-lg px-5">Hire Talent</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold mb-0">5000+</h2>
+                    <p class="text-muted small text-uppercase">Jobs Placed</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold mb-0">450+</h2>
+                    <p class="text-muted small text-uppercase">Hiring Partners</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold mb-0">15+</h2>
+                    <p class="text-muted small text-uppercase">Years Experience</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold mb-0">24/7</h2>
+                    <p class="text-muted small text-uppercase">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="img-stack">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid rounded-4 shadow" alt="Team">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="text-primary-blue fw-bold">ABOUT OUR AGENCY</h6>
+                    <h2 class="display-5 fw-bold mb-4">We are more than just a recruitment agency.</h2>
+                    <p class="text-muted mb-4">At Work Odisha, we understand that a job is more than a paycheck—it’s a
+                        career path. Our expert consultants work tirelessly to vet candidates and match them with
+                        companies where they can thrive.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary-blue me-2"></i> Industry Expert
+                            Consultants</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary-blue me-2"></i> Personalized Career
+                            Coaching</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary-blue me-2"></i> Vast Network of
+                            Odisha's Top Employers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="pe-lg-4">
+                        <h6 class="text-primary-blue fw-bold text-uppercase ls-1 mb-3">The Work Odisha Advantage</h6>
+                        <h2 class="display-5 fw-bold mb-4">Why Top Talent & Companies <span
+                                class="text-primary-blue">Trust Us.</span></h2>
+                        <p class="text-muted mb-4">We don't just close job openings; we build long-term professional
+                            relationships. Our deep roots in Odisha's industrial landscape give us an edge that global
+                            firms simply can't match.</p>
+
+                        <div class="mt-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature-check me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Verified Employers</h6>
+                                    <p class="small text-muted mb-0">Every company on our platform is strictly vetted
+                                        for legitimacy.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="feature-check me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Data Privacy</h6>
+                                    <p class="small text-muted mb-0">Your CV and personal data are encrypted and shared
+                                        only with your consent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="why-card active-blue">
+                                <div class="why-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <h5 class="fw-bold">Local Insights</h5>
+                                <p class="small mb-0">Unparalleled knowledge of the Odisha job market across
+                                    Bhubaneswar, Cuttack, and beyond.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card">
+                                <div class="why-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h5 class="fw-bold">Fast Turnaround</h5>
+                                <p class="small mb-0">Our streamlined process reduces hiring time by up to 40% for our
+                                    partner companies.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card">
+                                <div class="why-icon">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h5 class="fw-bold">Expert Matching</h5>
+                                <p class="small mb-0">AI-driven matching combined with human expertise to ensure the
+                                    perfect cultural fit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-card">
+                                <div class="why-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h5 class="fw-bold">Career Guidance</h5>
+                                <p class="small mb-0">Free interview preparation and resume optimization for all our
+                                    registered candidates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Our 3-Step Hiring Process</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <div class="step-num">01</div>
+                        <h4 class="fw-bold">Profile Submission</h4>
+                        <p class="text-muted">Upload your CV and let our AI-powered screening find your potential.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card active">
+                        <div class="step-num">02</div>
+                        <h4 class="fw-bold">Expert Interview</h4>
+                        <p class="text-muted">A quick consultation with our industry experts to verify your skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <div class="step-num">03</div>
+                        <h4 class="fw-bold">Direct Placement</h4>
+                        <p class="text-muted">Get scheduled for interviews directly with the hiring managers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="section-padding">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h6 class="text-primary-blue fw-bold text-uppercase ls-1">Broad Expertise</h6>
+                    <h2 class="display-5 fw-bold">Industries We Serve</h2>
+                    <p class="text-muted">We provide specialized recruitment solutions across a diverse range of
+                        sectors, ensuring the right talent meets the right industry needs.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5 class="fw-bold">IT & Software</h5>
+                        <p class="small text-muted mb-0">Frontend, Backend, AI, Data Science & Cyber Security.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h5 class="fw-bold">Banking & Finance</h5>
+                        <p class="small text-muted mb-0">Investment Banking, CA, Accounting, and Fintech.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h5 class="fw-bold">Healthcare</h5>
+                        <p class="small text-muted mb-0">Nursing, Medical Research, Pharmacy & Administration.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h5 class="fw-bold">Manufacturing</h5>
+                        <p class="small text-muted mb-0">Core Engineering, Logistics, and Plant Operations.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="fw-bold">Education</h5>
+                        <p class="small text-muted mb-0">Teaching, Counseling, and Educational Management.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h5 class="fw-bold">Construction</h5>
+                        <p class="small text-muted mb-0">Civil Engineering, Architecture, and Project Management.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h5 class="fw-bold">Hospitality</h5>
+                        <p class="small text-muted mb-0">Hotel Management, Tourism, and F&B Services.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h5 class="fw-bold">Retail & E-commerce</h5>
+                        <p class="small text-muted mb-0">Store Management, Supply Chain, and Digital Marketing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row g-0 rounded-4 overflow-hidden shadow-lg">
+                <div class="col-lg-5 bg-primary-blue p-5 text-white d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-4">Start Your Journey</h2>
+                    <p class="mb-5 opacity-75">Fill out the form and our representative will reach out within 24 hours.
+                    </p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-circle me-3"><i class="fas fa-map-marker-alt"></i></div>
+                        <span>Jayadev Vihar, Bhubaneswar, Odisha</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="fas fa-headset"></i></div>
+                        <span>Support: +91 674 123 456</span>
+                    </div>
+                </div>
+                <div class="col-lg-7 bg-white p-5">
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">First Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Last Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-semibold">Target Sector</label>
+                                <select class="form-select">
+                                    <option>Information Technology</option>
+                                    <option>Banking & Finance</option>
+                                    <option>Manufacturing</option>
+                                    <option>Healthcare</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Upload CV (PDF)</label>
+                                <input type="file" class="form-control">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-blue-premium w-100 py-3">Send Application</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">WORK<span class="text-primary-blue">ODISHA</span></h4>
+                    <p class="text-white-50">Leading Odisha's workforce evolution by connecting talent with the right
+                        environment.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary-blue">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <p class="text-center text-white-50 small">&copy; 2026 Work Odisha. Made by <a href="http://teksapphire.com"> TekSapphire</a>.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
